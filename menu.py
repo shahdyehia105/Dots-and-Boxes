@@ -1,9 +1,6 @@
 import pygame
 from ui import WHITE, GRAY, BG, FPS
 
-# -----------------------------
-# Menu (mode, board size, difficulty)
-# -----------------------------
 class Menu:
     def __init__(self, screen, options, title="Menu"):
         self.screen = screen
@@ -38,4 +35,5 @@ class Menu:
                     elif ev.key == pygame.K_DOWN:
                         self.selected = (self.selected + 1) % len(self.options)
                     elif ev.key == pygame.K_RETURN:
+
                         return self.options[self.selected][1]
