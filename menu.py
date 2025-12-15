@@ -6,7 +6,7 @@ class Menu:
         self.screen = screen
         self.font_title = pygame.font.SysFont(None, 56)
         self.font_opt = pygame.font.SysFont(None, 36)
-        self.options = options  # list of (label, value)
+        self.options = options 
         self.selected = 0
         self.title = title
 
@@ -37,3 +37,4 @@ class Menu:
                     elif ev.key == pygame.K_RETURN:
 
                         return self.options[self.selected][1]
+
